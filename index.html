@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Harshal's Portfolio | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.0.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Shared styles from projects.html for consistency */
+        body {
+            font-family: 'Inter', sans-serif; /* Assuming Inter font for consistency */
+        }
+        /* Adjusted Lime Colors for a duller effect */
+        .text-lime-main-heading { color: #84cc16; } /* Tailwind lime-500 */
+        .text-lime-primary { color: #65a30d; } /* Tailwind lime-600 */
+        .text-lime-accent { color: #a3e635; } /* Tailwind lime-400 */
+
+        .border-lime-primary { border-color: #65a30d; } /* Tailwind lime-600 */
+        .bg-lime-button { background-color: #65a30d; } /* Tailwind lime-600 */
+        .hover-bg-lime-button-dark:hover { background-color: #4d7c0f; } /* Tailwind lime-700 */
+
+        /* Existing hover-animate-card remains the same for its specific glow */
+        .hover-animate-card {
+            transition: all 0.4s ease;
+            transform-style: preserve-3d;
+        }
+        .hover-animate-card:hover {
+            transform: scale(1.05) rotateX(3deg) rotateY(3deg);
+            box-shadow: 0 10px 20px rgba(99, 151, 21, 0.4), 0 0 10px #6fb605;
+        }
+
+        /* Specific styles for learning cards on the home page */
+        .learning-card {
+            background-color: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(8px);
+            border: 2px solid #65a30d; /* Using the new primary lime for consistency */
+            transition: all 0.3s ease;
+        }
+        .learning-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(99, 151, 21, 0.3), 0 0 8px #6fb605;
+        }
+
+        /* Other common colors */
+        .bg-zinc-900 { background-color: #18181b; }
+        .bg-zinc-800 { background-color: #27272a; }
+        .text-gray-200 { color: #e5e7eb; } /* Standard gray for main text */
+        .text-white { color: #ffffff; }
+        .text-zinc-600 { color: #52525b; }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-black via-zinc-900 to-black text-lime-primary min-h-screen flex flex-col items-center p-10 font-sans">
+
+    <h1 class="text-5xl font-extrabold mb-4 text-center text-lime-main-heading drop-shadow-">
+        Sasarjan Internship Program
+    </h1>
+    <br>
+
+    <nav class="mb-12 flex space-x-6 text-xl font-medium">
+        <a href="index.html" class="text-lime-accent hover:text-white transition-colors border-b-2 border-lime-primary pb-1">Home</a>
+        <a href="projects.html" class="hover:text-lime-accent transition-colors">Projects</a>
+    </nav>
+
+    <h1 class="text-4xl font-extrabold mb-12 text-center">
+        👋 Welcome to Harshal's Portfolio Hub
+    </h1>
+
+    <div class="w-full max-w-4xl space-y-12">
+        <section class="p-8 bg-black/40 backdrop-blur-md rounded-2xl border-2 border-lime-primary shadow-lg">
+            <h2 class="text-3xl font-bold mb-4 text-lime-main-heading text-center">About Me</h2>
+            <div class="flex justify-center mb-6">
+                <img src="img3.jpg" alt="Harshal's Profile Picture" class="mx-auto w-36 h-48 border-4 border-lime-400 object-cover shadow-xl" ">
+            </div>
+            <p class="text-lg text-gray-200 leading-relaxed text-center">
+                Hello! I'm Harshal, an aspiring web developer passionate about creating engaging and functional digital experiences.
+                This portfolio is a testament to my journey through the Sasarjan Internship Program, showcasing the skills I've gained
+                and the projects I've built along the way. I'm excited to continue learning and contributing to the world of web development!
+            </p>
+        </section>
+
+        <section class="p-8 bg-black/40 backdrop-blur-md rounded-2xl border-2 border-lime-primary shadow-lg">
+            <h2 class="text-3xl font-bold mb-6 text-lime-main-heading text-center">My Learning Journey & Key Takeaways</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="learning-card p-5 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">HTML & CSS Fundamentals</h3>
+                    <p class="text-gray-200 text-sm">Mastered the foundational elements of web structure and styling, creating responsive and visually appealing layouts.</p>
+                </div>
+                <div class="learning-card p-5 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Tailwind CSS & DaisyUI</h3>
+                    <p class="text-gray-200 text-sm">Gained proficiency in utility-first CSS frameworks for rapid and efficient UI development, including component libraries.</p>
+                </div>
+                <div class="learning-card p-5 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Interactive JavaScript</h3>
+                    <p class="text-gray-200 text-sm">Learned to add dynamic behavior to web pages, handle user interactions, and manipulate the DOM for richer experiences.</p>
+                </div>
+                <div class="learning-card p-5 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">State Management (localStorage)</h3>
+                    <p class="text-gray-200 text-sm">Understood how to persist data across browser sessions using `localStorage` for features like shopping carts.</p>
+                </div>
+                <div class="learning-card p-5 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Multi-Page Architecture</h3>
+                    <p class="text-gray-200 text-sm">Developed skills in structuring web applications across multiple HTML pages for better organization and navigation.</p>
+                </div>
+                <div class="learning-card p-5 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Responsive Design Principles</h3>
+                    <p class="text-gray-200 text-sm">Implemented techniques to ensure websites look great and function seamlessly on various screen sizes and devices.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center">
+            <a href="projects.html" class="inline-block bg-lime-button text-white font-bold py-3 px-8 rounded-full shadow-lg hover-bg-lime-button-dark transition duration-300">
+                View My Projects 🚀
+            </a>
+        </div>
+    </div>
+
+    <footer class="mt-16 w-full max-w-4xl p-8 bg-zinc-800 rounded-lg shadow-lg text-center text-lime-primary">
+        <div class="mb-4">
+            <p class="text-lg font-semibold">🌟 Crafted with dedication by Harshal 🌟</p>
+        </div>
+        <div class="flex justify-center space-x-6 mb-4 text-sm">
+            <a href="#" class="hover:text-lime-accent transition-colors">Privacy Policy</a>
+            <span class="text-zinc-600">|</span>
+            <a href="#" class="hover:text-lime-accent transition-colors">Terms of Service</a>
+            <span class="text-zinc-600">|</span>
+            <a href="#top" class="hover:text-lime-accent transition-colors">Back to Top</a>
+        </div>
+        <p class="text-sm opacity-80">&copy; 2025 Harshal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
